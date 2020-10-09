@@ -81,9 +81,11 @@ module.exports = (options, tempPath) => {
   const html = mathjax.document(new LiteDocument(), {InputJax: InputJax, OutputJax: OutputJax});
   let style = adaptor.textContent(OutputJax.styleSheet(html))
 
+  let style = adaptor.textContent(OutputJax.styleSheet(html))
+
   // https://github.com/mathjax/mathjax-v3/pull/256
   style = style.replace(/\bwhite space\b/g, 'white-space')
-  console.log(style)
+
   return {
     style,
     render (source, display, localPresets) {
