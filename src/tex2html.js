@@ -72,15 +72,13 @@ module.exports = (options, tempPath) => {
         ),
         '../../../es5/output/chtml/fonts/woff-v2',
       ),
-      adaptiveCSS: false
+      adaptiveCSS: false,
     })
 
   const adaptor = liteAdaptor()
-  RegisterHTMLHandler(adaptor);
+  RegisterHTMLHandler(adaptor)
 
-  const html = mathjax.document(new LiteDocument(), {InputJax: InputJax, OutputJax: OutputJax});
-  let style = adaptor.textContent(OutputJax.styleSheet(html))
-
+  const html = mathjax.document(new LiteDocument(), { InputJax: InputJax, OutputJax: OutputJax })
   let style = adaptor.textContent(OutputJax.styleSheet(html))
 
   // https://github.com/mathjax/mathjax-v3/pull/256
