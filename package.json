@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vuepress/vuepress-plugin-mathjax.git"
+    "url": "https://github.com/BruceYuj/vuepress-plugin-mathjax.git"
   },
   "bugs": {
     "url": "https://github.com/vuepress/vuepress-plugin-mathjax/issues"
